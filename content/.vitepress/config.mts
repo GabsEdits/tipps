@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+import { link } from "fs";
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,8 +8,8 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'About', link: '/about' },
+      { text: "Home", link: "/" },
+      { text: "About", link: "/about" },
     ],
   },
-})
+});
