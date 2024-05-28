@@ -15,7 +15,7 @@
       <button
         @click="filterPosts('')"
         id="all-tags"
-        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl font-bold dark:bg-zinc-900"
+        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl font-bold dark:bg-zinc-900 dark:hover:bg-zinc-800"
       >
         All
       </button>
@@ -23,7 +23,7 @@
         v-for="tag in uniqueTags"
         :key="tag"
         @click="filterPosts(tag)"
-        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl dark:bg-zinc-900"
+        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl dark:bg-zinc-900 dark:hover:bg-zinc-800"
       >
         <span class="hashtag">#</span>{{ tag }}
       </button>

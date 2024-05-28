@@ -25,6 +25,7 @@ const navigation = theme.value.nav || [];
     <ArticlesList />
   </div>
   <div v-else>
+    <h1 class="text-center font-black text-4xl mb-5 text-black dark:text-white">{{ frontmatter.title }}</h1>
     <Content />
   </div>
   </main>

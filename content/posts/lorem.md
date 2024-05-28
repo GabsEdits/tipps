@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum
+title: Lorem
 date: 2024-06-02
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 tags:
