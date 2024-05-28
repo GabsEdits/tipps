@@ -6,4 +6,5 @@ Tipps is a simple [VitePress](https://vitepress.vuejs.org/) theme that is design
 
 Tipps is still in heavy development. Here are some of the features that are planned for the future:
 
-- Dark Mode
+- Footer
+- Informational bar

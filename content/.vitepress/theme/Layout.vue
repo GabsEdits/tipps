@@ -20,7 +20,7 @@ const navigation = theme.value.nav || [];
   </header>
   <main class="mx-[20%] max-[600px]:mx-[5%]">
   <div v-if="frontmatter.layout == 'home'">
-    <h1 class="text-center font-black text-4xl mb-5">{{ site.title }}</h1>
+    <h1 class="text-center font-black text-4xl mb-5 text-black dark:text-white">{{ site.title }}</h1>
     <p class="text-center">{{ site.description }}</p>
     <ArticlesList />
   </div>
