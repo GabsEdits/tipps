@@ -19,14 +19,29 @@ const navigation = theme.value.nav || [];
     </nav>
   </header>
   <main class="mx-[20%] max-[600px]:mx-[5%]">
-  <div v-if="frontmatter.layout == 'home'">
-    <h1 class="text-center font-black text-4xl mb-5 text-black dark:text-white">{{ site.title }}</h1>
-    <p class="text-center">{{ site.description }}</p>
-    <ArticlesList />
-  </div>
-  <div v-else>
-    <h1 class="text-center font-black text-4xl mb-5 text-black dark:text-white">{{ frontmatter.title }}</h1>
-    <Content />
-  </div>
+    <div v-if="frontmatter.layout == 'home'">
+      <h1
+        class="text-center font-black text-4xl mb-5 text-black dark:text-white"
+      >
+        {{ site.title }}
+      </h1>
+      <p class="text-center">{{ site.description }}</p>
+      <ArticlesList />
+    </div>
+    <div v-else>
+      <h1
+        class="text-center font-black text-4xl mb-5 text-black dark:text-white"
+      >
+        {{ frontmatter.title }}
+      </h1>
+      <Content />
+      <footer class="text-center my-10">
+        <a
+          href="/"
+          class="p-2 dark:bg-zinc-800 bg-zinc-200 rounded-md hover:scale-200 transform transition-transform"
+          >⬅ Back to home</a
+        >
+      </footer>
+    </div>
   </main>
 </template>

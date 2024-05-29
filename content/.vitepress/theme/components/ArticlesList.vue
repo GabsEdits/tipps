@@ -8,7 +8,7 @@
         v-model="searchQuery"
         type="text"
         placeholder="Search posts..."
-        class="px-2 py-1 border-2 border-zinc-200 rounded-3xl dark:border-zinc-700 dark:bg-zinc-800"
+        class="px-4 py-1 border-2 border-zinc-200 rounded-3xl dark:border-zinc-700 dark:bg-zinc-800"
       />
     </div>
     <div class="mb-10 text-sm">
