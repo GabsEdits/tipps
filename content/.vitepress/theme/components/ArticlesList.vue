@@ -15,7 +15,7 @@
       <button
         @click="filterPosts('')"
         id="all-tags"
-        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl font-bold dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-1 rounded-3xl font-bold dark:bg-zinc-900 dark:hover:bg-zinc-800 mb-1"
       >
         All
       </button>
@@ -23,7 +23,7 @@
         v-for="tag in uniqueTags"
         :key="tag"
         @click="filterPosts(tag)"
-        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-2 rounded-3xl dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 dark:border-zinc-700 mx-1 rounded-3xl dark:bg-zinc-900 dark:hover:bg-zinc-800 mb-1"
       >
         <span class="hashtag">#</span>{{ tag }}
       </button>
@@ -34,7 +34,7 @@
         :key="post.title"
         class="p-10 max-w-full rounded-xl bg-zinc-50 border-2 border-zinc-200 dark:border-zinc-700 mb-2 dark:bg-zinc-900"
       >
-        <h3 class="font-extrabold text-2xl mb-3 mt-0">
+        <h3 class="font-extrabold text-2xl mb-3 mt-0 hover:underline">
           <a
             :href="`posts/${post.title
               .toLowerCase()
