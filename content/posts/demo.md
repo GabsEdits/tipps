@@ -24,9 +24,9 @@ tags:
 
 **This is bold text**
 
-__This is bold text__
+**This is bold text**
 
-*This is italic text*
+_This is italic text_
 
 _This is italic text_
 
@@ -74,7 +74,7 @@ Images:
 ### Blocks:
 
 ```js
-console.log('This is a code block')
+console.log("This is a code block");
 ```
 
 ## Blockquotes:

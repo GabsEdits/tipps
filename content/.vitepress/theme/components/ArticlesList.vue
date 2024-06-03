@@ -84,14 +84,14 @@ const uniqueTags = computed(() => {
 const filteredPosts = computed(() => {
   return selectedTag.value === null
     ? posts.filter((post) =>
-        post.title.toLowerCase().includes(searchQuery.value.toLowerCase())
+        post.title.toLowerCase().includes(searchQuery.value.toLowerCase()),
       )
     : posts.filter(
         (post) =>
           (Array.isArray(post.tags)
             ? post.tags.includes(selectedTag.value)
             : post.tags === selectedTag.value) &&
-          post.title.toLowerCase().includes(searchQuery.value.toLowerCase())
+          post.title.toLowerCase().includes(searchQuery.value.toLowerCase()),
       );
 });
 
