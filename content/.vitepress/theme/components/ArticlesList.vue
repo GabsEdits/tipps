@@ -45,16 +45,9 @@
         <p>{{ post.description }}</p>
         <div class="text-right mt-5 text-sm">
           <span
-            v-if="typeof post.tags === 'string'"
-            :key="post.tags"
-            class="px-2 py-1 bg-zinc-50 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 mx-2 rounded-3xl dark:bg-zinc-700"
-            >#{{ post.tags }}</span
-          >
-          <span
-            v-else
             v-for="tag in post.tags"
             :key="tag"
-            class="px-2 py-1 bg-zinc-100 border-2 transition-colors hover:bg-zinc-200 border-zinc-200 mx-2 rounded-3xl dark:bg-zinc-700"
+            class="px-2 py-1 bg-zinc-200 border-2 transition-colors hover:bg-zinc-400 border-zinc-300 dark:border-zinc-600 mx-1 rounded-3xl dark:bg-zinc-800 dark:hover:bg-zinc-700 mb-1"
             >#{{ tag }}</span
           >
         </div>

@@ -18,7 +18,7 @@ const navigation = theme.value.nav || [];
       </ul>
     </nav>
   </header>
-  <main class="mx-[20%] max-[600px]:mx-[5%]">
+  <main class="mx-auto mt-[5%] mb-[2%] max-w-[65rem] w-[60vw] max-[600px]:w-[90vw]">
     <div v-if="frontmatter.layout == 'home'">
       <h1
         class="text-center font-black text-4xl mb-5 text-black dark:text-white"
