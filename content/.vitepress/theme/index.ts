@@ -1,6 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import Layout from "./Layout.vue";
 import type { Theme } from "vitepress";
+import "@csstools/normalize.css";
 import "./style.scss";
 
 export default {
