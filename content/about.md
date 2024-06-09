@@ -6,7 +6,13 @@ Build with the power of [Tailwind CSS](https://tailwindcss.com/), to make it eas
 
 ## Roadmap
 
-Tipps is still in heavy development. Here are some of the features that are planned for the future:
+Most of the features are already implemented, but there are still some things that need to be done. Here is a list of things that are planned for the future:
 
-- Footer
-- Informational bar
+- RSS Feed
+- Pagination
+
+If you have any suggestions or ideas, feel free to open an issue on the [GitHub repository](https://github.com/GabsEdits/tipps).
+
+---
+
+Licensed under the [MIT License](https://github.com/GabsEdits/tipps/blob/main/LICENSE).

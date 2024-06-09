@@ -7,8 +7,10 @@ export default defineConfig({
   description: "Share your tips and tricks!",
 
   themeConfig: {
+    author: "Gabriel Cozma",
     nav: [
       { text: "Home", link: "/" },
+      { text: "Use", link: "/use" },
       { text: "About", link: "/about" },
     ],
   },

@@ -9,17 +9,9 @@ const navigation = theme.value.nav || [];
 </script>
 
 <template>
-  <header>
-    <nav class="text-center max-w-[100px] mx-auto my-8">
-      <ul class="justify-between flex items-center list-none">
-        <li v-for="item in navigation">
-          <a :href="item.link">{{ item.text }}</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="layout flex flex-col min-h-dvh">
   <main
-    class="mx-auto mt-[5%] mb-[2%] max-w-[65rem] w-[60vw] max-[600px]:w-[90vw]"
+    class="mx-auto mt-[5%] mb-[2%] max-w-[65rem] w-[60vw] max-[600px]:w-[90vw] grow"
   >
     <div v-if="frontmatter.layout == 'home'">
       <h1
@@ -46,4 +38,17 @@ const navigation = theme.value.nav || [];
       </footer>
     </div>
   </main>
+  <nav
+    class="flex items-center gap-3 sticky bottom-0 backdrop-blur-sm bg-opacity-50 bg-zinc-50 dark:bg-zinc-900 border-t border-t-zinc-200 dark:border-t-zinc-800 px-8 py-3 justify-between w-full z-10"
+  >
+    <ul class="flex items-center justify-end gap-3 list-none mr-8 m-0">
+      <li v-for="item in navigation" class="font-medium text-sm">
+        <a :href="item.link">{{ item.text }}</a>
+      </li>
+    </ul>
+    <span class="text-sm opacity-70 font-medium"
+      >© {{ new Date().getFullYear() }} {{ theme.author }}</span
+    >
+  </nav>
+  </div>
 </template>
