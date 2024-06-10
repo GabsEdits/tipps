@@ -1,4 +1,3 @@
-import { link } from "fs";
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
@@ -7,7 +6,10 @@ export default defineConfig({
   description: "Share your tips and tricks!",
 
   themeConfig: {
-    author: "Gabriel Cozma",
+    author: {
+      name: "Gabriel Cozma",
+      link: "https://gxbs.me/",
+    },
     nav: [
       { text: "Home", link: "/" },
       { text: "Use", link: "/use" },
