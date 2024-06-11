@@ -158,3 +158,10 @@ hr {
     @apply border-zinc-800;
   }
 }
+
+a:not(nav a),
+a:not(article a) {
+  @apply font-bold;
+  @apply transition-colors;
+  @apply underline;
+}
