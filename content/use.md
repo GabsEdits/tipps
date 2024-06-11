@@ -4,7 +4,7 @@ This is a simple guide on how to use the Tipps theme. It is designed to be easy 
 
 ## Installation
 
-First, you have to open the repository [GabsEdits/tipps](https://github.com/GabsEdits/tipps) and click on the "Use this template" button. This will create a new repository with the Tipps theme. 
+First, you have to open the repository [GabsEdits/tipps](https://github.com/GabsEdits/tipps) and click on the "Use this template" button. This will create a new repository with the Tipps theme.
 
 You can follow [the guide by GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to create a new repository from a template.
 

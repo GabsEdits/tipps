@@ -34,7 +34,9 @@
         :key="post.title"
         class="p-10 max-w-full rounded-xl bg-zinc-50 border-2 border-zinc-200 dark:border-zinc-700 mb-2 dark:bg-zinc-900"
       >
-        <h3 class="font-extrabold text-2xl mb-3 mt-0 hover:underline no-underline">
+        <h3
+          class="font-extrabold text-2xl mb-3 mt-0 hover:underline no-underline"
+        >
           <a
             :href="`posts/${post.title
               .toLowerCase()

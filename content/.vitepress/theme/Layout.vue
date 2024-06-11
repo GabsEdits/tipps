@@ -48,7 +48,9 @@ const navigation = theme.value.nav || [];
       </ul>
       <span class="text-sm opacity-70 font-medium"
         >© {{ new Date().getFullYear() }}
-        <a :href="theme.author.link" class="underline">{{ theme.author.name }}</a></span
+        <a :href="theme.author.link" class="underline">{{
+          theme.author.name
+        }}</a></span
       >
     </nav>
   </div>
