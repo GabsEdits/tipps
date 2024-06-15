@@ -18,17 +18,26 @@ Here is an example of the configuration file:
 import { link } from "fs";
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Tipps",
   description: "Share your tips and tricks!",
 
   themeConfig: {
-    author: "Gabriel Cozma",
+    author: {
+      name: "Gabriel Cozma",
+      link: "https://gxbs.me",
+    },
+    }
     nav: [
       { text: "Home", link: "/" },
-      { text: "My Website", link: "https://gabrielcozma.com" },
+      { text: "My Website", link: "https://gxbs.me" },
     ],
   },
 });
 ```
+
+Read more about the configuration in the [VitePress documentation](https://vitepress.dev/reference/site-config).
+
+---
+
+If you are looking for a more generic theme, you can check out [Aplós](https://aplos.gxbs.me). It is a simple VitePress theme that is designed to be easy to use and easy to extend.
