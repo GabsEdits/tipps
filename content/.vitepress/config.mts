@@ -10,7 +10,13 @@ export default defineConfig({
     ["meta", { name: "author", content: "Gabriel Cozma" }],
     ["meta", { name: "twitter:card", content: "summary" }],
     ["meta", { name: "og:title", content: "Tipps" }],
-    ["meta", { name: "og:description", content: "Share your tips and tricks with the world!" }],
+    [
+      "meta",
+      {
+        name: "og:description",
+        content: "Share your tips and tricks with the world!",
+      },
+    ],
     ["meta", { name: "og:url", content: "https://tipps.gxbs.me/" }],
   ],
 
@@ -23,7 +29,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Use", link: "/use" },
       { text: "About", link: "/about" },
-      { text: "GitHub", link: "https://github.com/GabsEdits/tipps" }
+      { text: "GitHub", link: "https://github.com/GabsEdits/tipps" },
     ],
   },
 });
