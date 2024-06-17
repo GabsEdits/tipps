@@ -2,6 +2,7 @@
 title: Demo
 date: 2024-07-01
 description: This is a demo post.
+author: John Doe
 tags:
   - demo
   - example

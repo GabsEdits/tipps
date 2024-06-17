@@ -46,13 +46,24 @@
           >
         </h3>
         <p>{{ post.description }}</p>
-        <div class="text-right mt-5 text-sm">
-          <span
-            v-for="tag in post.tags"
-            :key="tag"
-            class="px-2 py-1 bg-zinc-200 border-2 transition-colors hover:bg-zinc-400 border-zinc-300 dark:border-zinc-600 mx-1 rounded-3xl dark:bg-zinc-800 dark:hover:bg-zinc-700 mb-1"
-            ><span class="opacity-60 font-medium">#</span>{{ tag }}</span
-          >
+        <div class="justify-between flex">
+          <div class="text-sm mt-5 opacity-60">
+            <span class="font-bold">Published on: </span>
+            <time class="font-medium">{{ post.date }}</time>
+            <span v-if="post.author">
+              <span> · </span>
+              <span class="font-bold">Author: </span>
+              <span class="font-medium">{{ post.author }}</span>
+            </span>
+          </div>
+          <div class="text-right mt-5 text-sm">
+            <span
+              v-for="tag in post.tags"
+              :key="tag"
+              class="px-2 py-1 bg-zinc-200 border-2 transition-colors hover:bg-zinc-400 border-zinc-300 dark:border-zinc-600 mx-1 rounded-3xl dark:bg-zinc-800 dark:hover:bg-zinc-700 mb-1"
+              ><span class="opacity-60 font-medium">#</span>{{ tag }}</span
+            >
+          </div>
         </div>
       </article>
     </div>
