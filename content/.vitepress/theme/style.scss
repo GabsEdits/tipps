@@ -170,12 +170,7 @@ a:not(article a) {
   @apply font-bold;
   @apply transition-colors;
   @apply underline;
-
-  &:hover {
-    @apply text-zinc-600;
-
-    @media (prefers-color-scheme: dark) {
-      @apply text-zinc-400;
-    }
-  }
+  @apply hover:text-zinc-600;
+  @apply dark:hover:text-zinc-400;
+  @apply hover:decoration-dotted;
 }

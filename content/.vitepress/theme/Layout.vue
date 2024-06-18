@@ -29,10 +29,10 @@ const navigation = theme.value.nav || [];
           {{ frontmatter.title }}
         </h1>
         <Content />
-        <footer class="text-center my-10">
+        <footer class="text-center my-10 hover:scale-500">
           <a
             href="/"
-            class="p-2 dark:bg-zinc-800 bg-zinc-200 rounded-md hover:scale-200 transform transition-transform"
+            class="p-2 dark:bg-zinc-800 bg-zinc-200 rounded-md transition-transform"
             >⬅ Back to home</a
           >
         </footer>
@@ -42,7 +42,7 @@ const navigation = theme.value.nav || [];
       class="flex items-center gap-3 sticky bottom-0 backdrop-blur-sm bg-opacity-50 bg-zinc-50 dark:bg-zinc-900 border-t border-t-zinc-200 dark:border-t-zinc-800 px-8 py-3 justify-between w-full z-10"
     >
       <ul class="flex items-center justify-end gap-3 list-none mr-8 m-0">
-        <li v-for="item in navigation" class="font-medium text-sm underline">
+        <li v-for="item in navigation" class="font-medium text-sm">
           <a :href="item.link">{{ item.text }}</a>
         </li>
       </ul>
