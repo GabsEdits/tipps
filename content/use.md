@@ -46,8 +46,7 @@ Inside the `feed.ts` file, you can find the 6th to 11th line. Here is an example
 
 ```typescript
 const title = "Tipps";
-const description =
-  "Share your tips to the world!";
+const description = "Share your tips to the world!";
 const copyright = "Copyright (c) 2024-present, Gabriel Cozma";
 const image = "https://blog.gabs.eu.org/android-chrome-512x512.png";
 const baseUrl = `https://tipps.gxbs.me/`;
