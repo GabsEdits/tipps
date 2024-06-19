@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { genFeed } from "./feed.ts";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,6 +22,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    base: "https://tipps.gxbs.me/",
     author: {
       name: "Gabriel Cozma",
       link: "https://gxbs.me/",
@@ -32,4 +34,5 @@ export default defineConfig({
       { text: "GitHub", link: "https://github.com/GabsEdits/tipps" },
     ],
   },
+  buildEnd: genFeed,
 });

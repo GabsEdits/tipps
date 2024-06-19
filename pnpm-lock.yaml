@@ -11,6 +11,9 @@ importers:
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
+      feed:
+        specifier: ^4.2.2
+        version: 4.2.2
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
@@ -656,6 +659,10 @@ packages:
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
+  feed@4.2.2:
+    resolution: {integrity: sha512-u5/sxGfiMfZNtJ3OvQpXcvotFpYkL0n9u9mM2vkui2nGo8b4wvDkJ8gAkYqbA8QpGyFCv3RK0Z+Iv+9veCS9bQ==}
+    engines: {node: '>=0.4.0'}
+
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
@@ -921,6 +928,9 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  sax@1.4.1:
+    resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
+
   search-insights@2.14.0:
     resolution: {integrity: sha512-OLN6MsPMCghDOqlCtsIsYgtsC0pnwVTyT9Mu6A3ewOj1DxvzZF6COrn2g86E/c05xbktB0XN04m/t1Z+n+fTGw==}
 
@@ -1083,6 +1093,10 @@ packages:
     resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
     engines: {node: '>=12'}
 
+  xml-js@1.6.11:
+    resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}
+    hasBin: true
+
   yaml@2.4.5:
     resolution: {integrity: sha512-aBx2bnqDzVOyNKfsysjA2ms5ZlnjSAW2eG3/L5G/CSujfjLJTJsEw1bGw8kCf04KodQWk1pxlGnZ56CRxiawmg==}
     engines: {node: '>= 14'}
@@ -1231,6 +1245,7 @@ snapshots:
       '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.23.3)(algoliasearch@4.23.3)
       '@docsearch/css': 3.6.0
       algoliasearch: 4.23.3
+    optionalDependencies:
       search-insights: 2.14.0
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -1412,7 +1427,7 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.3.1)(vue@3.4.29)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(sass@1.77.6))(vue@3.4.29)':
     dependencies:
       vite: 5.3.1(sass@1.77.6)
       vue: 3.4.29
@@ -1506,8 +1521,9 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.11.0(vue@3.4.29)
       '@vueuse/shared': 10.11.0(vue@3.4.29)
-      focus-trap: 7.5.4
       vue-demi: 0.14.8(vue@3.4.29)
+    optionalDependencies:
+      focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1683,6 +1699,10 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
+  feed@4.2.2:
+    dependencies:
+      xml-js: 1.6.11
+
   fill-range@7.1.1:
     dependencies:
       to-regex-range: 5.0.1
@@ -1840,8 +1860,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.2
-      postcss: 8.4.38
       yaml: 2.4.5
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -1916,6 +1937,8 @@ snapshots:
       chokidar: 3.6.0
       immutable: 4.3.6
       source-map-js: 1.2.0
+
+  sax@1.4.1: {}
 
   search-insights@2.14.0: {}
 
@@ -2029,9 +2052,9 @@ snapshots:
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.18.0
-      sass: 1.77.6
     optionalDependencies:
       fsevents: 2.3.3
+      sass: 1.77.6
 
   vitepress@1.2.3(@algolia/client-search@4.23.3)(postcss@8.4.38)(sass@1.77.6)(search-insights@2.14.0):
     dependencies:
@@ -2040,7 +2063,7 @@ snapshots:
       '@shikijs/core': 1.7.0
       '@shikijs/transformers': 1.7.0
       '@types/markdown-it': 14.1.1
-      '@vitejs/plugin-vue': 5.0.5(vite@5.3.1)(vue@3.4.29)
+      '@vitejs/plugin-vue': 5.0.5(vite@5.3.1(sass@1.77.6))(vue@3.4.29)
       '@vue/devtools-api': 7.3.1(vue@3.4.29)
       '@vue/shared': 3.4.29
       '@vueuse/core': 10.11.0(vue@3.4.29)
@@ -2048,10 +2071,11 @@ snapshots:
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.3.0
-      postcss: 8.4.38
       shiki: 1.7.0
       vite: 5.3.1(sass@1.77.6)
       vue: 3.4.29
+    optionalDependencies:
+      postcss: 8.4.38
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'
@@ -2106,5 +2130,9 @@ snapshots:
       ansi-styles: 6.2.1
       string-width: 5.1.2
       strip-ansi: 7.1.0
+
+  xml-js@1.6.11:
+    dependencies:
+      sax: 1.4.1
 
   yaml@2.4.5: {}
