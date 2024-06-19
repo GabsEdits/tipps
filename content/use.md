@@ -6,7 +6,7 @@ This is a simple guide on how to use the Tipps theme. It is designed to be easy 
 
 First, you have to open the repository [GabsEdits/tipps](https://github.com/GabsEdits/tipps) and click on the "Use this template" button. This will create a new repository with the Tipps theme.
 
-You can follow [the guide by GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to create a new repository from a template.
+> You can follow [the guide by GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to create a new repository from a template.
 
 ## Configuration
 
@@ -45,11 +45,11 @@ The theme comes with an RSS feed. You can find the feed at `/feed.xml`. You can 
 Inside the `feed.ts` file, you can find the 6th to 11th line. Here is an example of the configuration:
 
 ```typescript
-const title = "Tipps";
-const description = "Share your tips to the world!";
-const copyright = "Copyright (c) 2024-present, Gabriel Cozma";
-const image = "https://blog.gabs.eu.org/android-chrome-512x512.png";
-const baseUrl = `https://tipps.gxbs.me/`;
+const title = "Tips";
+const description = "Sharing my tips and tricks with the world";
+const copyright = "Copyright (c) 2024-present, John Doe";
+const image = "https://john.doe.example.org/image.png";
+const baseUrl = `https://john.doe.example.org`;
 ```
 
 That's it! You have successfully configured the Tipps theme. Now you can start sharing your knowledge with the world.
