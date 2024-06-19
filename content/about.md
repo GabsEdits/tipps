@@ -8,7 +8,6 @@ Build with the power of [Tailwind CSS](https://tailwindcss.com/), to make it eas
 
 Most of the features are already implemented, but there are still some things that need to be done. Here is a list of things that are planned for the future:
 
-- RSS Feed
 - Pagination
 
 If you have any suggestions or ideas, feel free to open an issue on the [GitHub repository](https://github.com/GabsEdits/tipps).
