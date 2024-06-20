@@ -9,13 +9,13 @@ const navigation = theme.value.nav || [];
 </script>
 
 <template>
-  <div class="layout flex flex-col min-h-dvh">
+  <div class="flex flex-col min-h-dvh">
     <main
       class="mx-auto mt-[5%] mb-[2%] max-w-[65rem] w-[60vw] max-[600px]:w-[90vw] grow"
     >
       <div v-if="frontmatter.layout == 'home'">
         <h1
-          class="text-center font-black text-4xl mb-5 text-black dark:text-white"
+          class="text-center font-black text-4xl mb-5"
         >
           {{ site.title }}
         </h1>
@@ -24,7 +24,7 @@ const navigation = theme.value.nav || [];
       </div>
       <div v-else>
         <h1
-          class="text-center font-black text-4xl mb-5 text-black dark:text-white"
+          class="text-center font-black text-4xl mb-5"
         >
           {{ frontmatter.title }}
         </h1>

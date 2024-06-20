@@ -38,9 +38,9 @@ export default defineConfig({
 
 Read more about the configuration in the [VitePress documentation](https://vitepress.dev/reference/site-config).
 
-## RSS Feed
+## Feed
 
-The theme comes with an RSS feed. You can find the feed at `/feed.xml`. You can use this feed to share your content with the world. There is only one issue, you need to configure the feed with your own information.
+The theme comes with an RSS feed. You can find the feed at `/atom.xml`. You can use this feed to share your content with the world. There is only one issue, you need to configure the feed with your own information.
 
 Inside the `feed.ts` file, you can find the 6th to 11th line. Here is an example of the configuration:
 

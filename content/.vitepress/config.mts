@@ -28,10 +28,9 @@ export default defineConfig({
       link: "https://gxbs.me/",
     },
     nav: [
-      { text: "Home", link: "/" },
       { text: "Use", link: "/use" },
       { text: "About", link: "/about" },
-      { text: "GitHub", link: "https://github.com/GabsEdits/tipps" },
+      { text: "Source Code", link: "https://github.com/GabsEdits/tipps" },
     ],
   },
   buildEnd: genFeed,
