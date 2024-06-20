@@ -35,14 +35,14 @@ const navigation = theme.value.nav || [];
       </div>
     </main>
     <nav
-      class="flex items-center gap-3 sticky bottom-0 backdrop-blur-sm bg-opacity-50 bg-zinc-50 dark:bg-zinc-900 border-t border-t-zinc-200 dark:border-t-zinc-800 px-8 py-3 justify-between w-full z-10"
+      class="flex items-center gap-3 sticky bottom-0 backdrop-blur-sm bg-opacity-50 bg-zinc-50 dark:bg-zinc-900 border-t border-t-zinc-200 dark:border-t-zinc-700 px-8 py-3 justify-between w-full z-10"
     >
       <ul class="flex items-center justify-end gap-3 list-none mr-8 m-0">
         <li v-for="item in navigation" class="font-medium text-sm">
           <a :href="item.link">{{ item.text }}</a>
         </li>
       </ul>
-      <span class="text-sm opacity-70 font-medium"
+      <span class="text-sm opacity-80 font-medium"
         >© {{ new Date().getFullYear() }}
         <a :href="theme.author.link" class="underline">{{
           theme.author.name
