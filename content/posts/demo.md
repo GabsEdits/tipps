@@ -9,15 +9,15 @@ tags:
   - post
 ---
 
-## H2
+## Header 2
 
-### H3
+### Header 3
 
-#### H4
+#### Header 4
 
-##### H5
+##### Header 5
 
-###### H6
+###### Header 6
 
 ---
 
@@ -25,13 +25,7 @@ tags:
 
 **This is bold text**
 
-**This is bold text**
-
 _This is italic text_
-
-_This is italic text_
-
-Strikethrough:
 
 ~~This is strikethrough text~~
 
@@ -41,7 +35,9 @@ Links:
 
 Images:
 
-![This is an image](https://example.com/image.jpg)
+![This is an image](https://images.unsplash.com/photo-1713098564541-3e11d9898721?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+<figcaption>This is an image caption</figcaption>
 
 ## Lists:
 
