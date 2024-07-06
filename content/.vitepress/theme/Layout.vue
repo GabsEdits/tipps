@@ -21,7 +21,23 @@ const navigation = theme.value.nav || [];
         <ArticlesList />
       </div>
       <div v-else>
-        <h1 class="text-center font-black text-4xl mb-5">
+        <small class="text-center block">
+          <time>
+            {{
+              new Date(frontmatter.date).toLocaleDateString(
+                theme.locale || "en-US",
+                {
+                  day: "2-digit",
+                  month: "long",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                },
+              )
+            }}</time
+          >, {{ frontmatter.author }}
+        </small>
+        <h1 class="text-center font-black text-4xl mb-8">
           {{ frontmatter.title }}
         </h1>
         <Content />
@@ -29,7 +45,7 @@ const navigation = theme.value.nav || [];
           <a
             href="/"
             class="p-2 dark:bg-zinc-800 bg-zinc-200 rounded-md transition-transform"
-            >⬅ Back to home</a
+            >⬅ Back home</a
           >
         </footer>
       </div>
