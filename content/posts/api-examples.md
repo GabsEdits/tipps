@@ -5,9 +5,9 @@ date: 2024-06-01
 description: Demonstrates usage of some of the runtime APIs provided by VitePress.
 author: John Doe
 tags:
-  - vitepress
-  - api
-  - examples
+  - Vitepress
+  - API
+  - Examples
 ---
 
 ## Runtime API Examples

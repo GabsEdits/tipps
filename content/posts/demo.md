@@ -4,9 +4,9 @@ date: 2024-07-01
 description: This is a demo post.
 author: John Doe
 tags:
-  - demo
-  - example
-  - post
+  - Demo
+  - Example
+  - Post
 ---
 
 ## Header 2
@@ -18,8 +18,6 @@ tags:
 ##### Header 5
 
 ###### Header 6
-
----
 
 ## Emphasis:
 
