@@ -9,7 +9,6 @@ Build with the power of [Tailwind CSS](https://tailwindcss.com/), to make it eas
 
 ## Development
 
-
 Make sure you have [Node.js](https://nodejs.org) and [PNPM](https://pnpm.io) installed.
 
 **Install the dependencies:**
