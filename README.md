@@ -1,6 +1,6 @@
-<div align="center"
-<h1>Tipps</h1>
-<p>Share your tips and tricks with the world.</p>
+<div align="center">
+  <h1>Tipps</h1>
+  <p>Share your tips and tricks with the world.</p>
 </div>
 
 Tipps is a simple [VitePress](https://vitepress.dev) theme that is designed to showcase the world your tips and tricks. It is a minimalistic theme that is designed to be easy to use and easy to read.
