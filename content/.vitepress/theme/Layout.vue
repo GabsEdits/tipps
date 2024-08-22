@@ -24,7 +24,7 @@ const navigation = theme.value.nav || [];
       <div v-if="frontmatter.layout == 'post'">
         <Article />
       </div>
-      <div v-else>
+      <div v-else-if="!frontmatter.layout">
         <Content />
         <footer class="text-center my-10 hover:scale-500">
           <a
