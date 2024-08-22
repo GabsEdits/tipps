@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Demo
 date: 2024-07-01
 description: This is a demo post.

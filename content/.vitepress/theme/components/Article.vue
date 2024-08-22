@@ -1,4 +1,5 @@
 <template>
+<article>
   <header class="mb-10">
     <small class="text-center block">
       <time>
@@ -44,6 +45,7 @@
       >⬅ Back home</a
     >
   </footer>
+</article>
 </template>
 
 <script setup lang="ts">

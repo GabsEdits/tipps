@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: API Examples
 date: 2024-06-01
 description: Demonstrates usage of some of the runtime APIs provided by VitePress.
