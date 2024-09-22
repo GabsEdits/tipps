@@ -66,6 +66,10 @@
           </div>
         </div>
       </article>
+
+      <div v-if="filteredPosts?.length === 0" class="text-center mt-5">
+        <h2 class="text-2xl font-bold">No posts found.</h2>
+      </div>
     </div>
   </div>
 </template>
