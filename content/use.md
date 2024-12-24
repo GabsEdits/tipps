@@ -25,12 +25,12 @@ export default defineConfig({
   themeConfig: {
     author: {
       name: "Gabriel Cozma",
-      link: "https://gxbs.me",
+      link: "https://gxbs.dev",
     },
     }
     nav: [
       { text: "Home", link: "/" },
-      { text: "My Website", link: "https://gxbs.me" },
+      { text: "My Website", link: "https://gxbs.dev" },
     ],
   },
 });
@@ -56,4 +56,4 @@ That's it! You have successfully configured the Tipps theme. Now you can start s
 
 ---
 
-If you are looking for a more generic theme, you can check out [Aplós](https://aplos.gxbs.me). It is a simple VitePress theme that is designed to be easy to use and easy to extend.
+If you are looking for a more generic theme, you can check out [Aplós](https://aplos.gxbs.dev). It is a simple VitePress theme that is designed to be easy to use and easy to extend.
