@@ -33,6 +33,7 @@ const navigation = theme.value.nav || [];
             src="https://http.cat/404"
             alt="404"
             class="w-1/2 h-auto mt-5"
+            />
         </div>
         <footer class="text-center my-10 hover:scale-500">
           <a
