@@ -7,7 +7,7 @@ const title = "Tipps";
 const description = "Share your tips to the world!";
 const copyright = "Copyright (c) 2024-present, Gabriel Cozma";
 const image = "https://blog.gabs.eu.org/android-chrome-512x512.png";
-const baseUrl = `https://tipps.gxbs.me/`;
+const baseUrl = `https://tipps.gxbs.dev/`;
 
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({

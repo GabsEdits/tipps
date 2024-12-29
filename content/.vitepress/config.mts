@@ -18,7 +18,7 @@ export default defineConfig({
         content: "Share your tips and tricks with the world!",
       },
     ],
-    ["meta", { name: "og:url", content: "https://tipps.gxbs.me/" }],
+    ["meta", { name: "og:url", content: "https://tipps.gxbs.dev/" }],
   ],
 
   themeConfig: {
