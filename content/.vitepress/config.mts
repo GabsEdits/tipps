@@ -24,7 +24,7 @@ export default defineConfig({
   themeConfig: {
     author: {
       name: "Gabriel Cozma",
-      link: "https://gxbs.me/",
+      link: "https://gxbs.dev/",
     },
     nav: [
       { text: "Use", link: "/use" },
