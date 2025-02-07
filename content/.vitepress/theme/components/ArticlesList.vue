@@ -35,13 +35,13 @@
         class="mb-2 max-w-full rounded-xl border-2 border-zinc-200 bg-zinc-50 p-10 dark:border-zinc-700 dark:bg-zinc-900"
       >
         <h3
-          class="mb-3 mt-0 text-2xl font-extrabold no-underline hover:underline"
+          class="mt-0 mb-3 text-2xl font-extrabold no-underline hover:underline"
         >
           <a
             :href="`posts/${post.title
               .toLowerCase()
               .replace(/\s+/g, '-')}.html`"
-            class="mb-3 mt-0 text-2xl font-extrabold hover:underline dark:text-zinc-50"
+            class="mt-0 mb-3 text-2xl font-extrabold hover:underline dark:text-zinc-50"
             >{{ post.title }}</a
           >
         </h3>

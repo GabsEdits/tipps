@@ -12,7 +12,7 @@ const navigation = theme.value.nav || [];
 <template>
   <div class="flex min-h-dvh flex-col">
     <main
-      class="mx-auto mb-[2%] mt-[5%] w-[60vw] max-w-[65rem] grow max-[600px]:w-[90vw]"
+      class="mx-auto mt-[5%] mb-[2%] w-[60vw] max-w-[65rem] grow max-[600px]:w-[90vw]"
     >
       <div v-if="frontmatter.layout == 'home'">
         <h1 class="mb-5 text-center text-4xl font-black">
@@ -39,7 +39,7 @@ const navigation = theme.value.nav || [];
             class="mt-5 h-auto w-1/2"
           />
         </div>
-        <footer class="hover:scale-500 my-10 text-center">
+        <footer class="my-10 text-center hover:scale-500">
           <a
             href="/"
             class="rounded-md bg-zinc-200 p-2 no-underline transition-transform dark:bg-zinc-800"
@@ -49,7 +49,7 @@ const navigation = theme.value.nav || [];
       </div>
       <div v-else-if="!frontmatter.layout">
         <Content />
-        <footer class="hover:scale-500 my-10 text-center">
+        <footer class="my-10 text-center hover:scale-500">
           <a
             href="/"
             class="rounded-md bg-zinc-200 p-2 transition-transform dark:bg-zinc-800"
@@ -59,7 +59,7 @@ const navigation = theme.value.nav || [];
       </div>
     </main>
     <nav
-      class="sticky bottom-0 z-10 flex w-full items-center justify-between gap-3 border-t border-t-zinc-200 bg-zinc-50 bg-opacity-50 px-8 py-3 backdrop-blur-sm dark:border-t-zinc-700 dark:bg-zinc-900"
+      class="bg-opacity-50 sticky bottom-0 z-10 flex w-full items-center justify-between gap-3 border-t border-t-zinc-200 bg-zinc-50 px-8 py-3 backdrop-blur-sm dark:border-t-zinc-700 dark:bg-zinc-900"
     >
       <ul class="m-0 mr-8 flex list-none items-center justify-end gap-3">
         <li v-for="item in navigation" class="text-sm font-medium">

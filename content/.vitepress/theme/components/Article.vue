@@ -38,7 +38,7 @@
       <hr class="my-5" />
     </header>
     <Content />
-    <footer class="hover:scale-500 my-10 text-center">
+    <footer class="my-10 text-center hover:scale-500">
       <a
         href="/"
         class="rounded-md bg-zinc-200 p-2 transition-transform dark:bg-zinc-800"
