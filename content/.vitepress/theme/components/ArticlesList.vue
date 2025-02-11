@@ -11,7 +11,7 @@
         class="rounded-3xl border-2 border-zinc-200 px-4 py-1 dark:border-zinc-700 dark:bg-zinc-800"
       />
     </div>
-    <div class="mb-10 text-sm flex flex-row gap-2">
+    <div class="mb-10 flex flex-row gap-2 text-sm">
       <button
         @click="filterPosts('')"
         id="all-tags"
