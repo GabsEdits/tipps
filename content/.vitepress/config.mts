@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { genFeed } from "./feed.ts";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -31,6 +32,9 @@ export default defineConfig({
       { text: "About", link: "/about" },
       { text: "Source Code", link: "https://github.com/GabsEdits/tipps" },
     ],
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
   buildEnd: genFeed,
 });
