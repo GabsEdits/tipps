@@ -31,8 +31,8 @@ importers:
         version: 1.6.3(@algolia/client-search@5.20.2)(lightningcss@1.29.1)(postcss@8.5.2)(sass@1.85.0)(search-insights@2.14.0)
     devDependencies:
       tailwindcss:
-        specifier: ^4.0.6
-        version: 4.0.6
+        specifier: ^4.0.8
+        version: 4.0.8
 
 packages:
 
@@ -1066,6 +1066,9 @@ packages:
   tailwindcss@4.0.6:
     resolution: {integrity: sha512-mysewHYJKaXgNOW6pp5xon/emCsfAMnO8WMaGKZZ35fomnR/T5gYnRg2/yRTTrtXiEl1tiVkeRt0eMO6HxEZqw==}
 
+  tailwindcss@4.0.8:
+    resolution: {integrity: sha512-Me7N5CKR+D2A1xdWA5t5+kjjT7bwnxZOE6/yDI/ixJdJokszsn2n++mdU5yJwrsTpqFX2B9ZNMBJDwcqk9C9lw==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -2074,6 +2077,8 @@ snapshots:
   tabbable@6.2.0: {}
 
   tailwindcss@4.0.6: {}
+
+  tailwindcss@4.0.8: {}
 
   tapable@2.2.1: {}
 
