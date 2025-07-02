@@ -15,6 +15,6 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.11"
   }
 }
